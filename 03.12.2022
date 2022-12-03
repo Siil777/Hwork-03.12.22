@@ -1,0 +1,323 @@
+#1. Вводят 15 чисел. Определить, сколько среди них целых.
+#1.option
+#j=0
+#for i in range(1,6,1):
+#    A=float(input(f" sisesta A:"))
+#    int(A)==A
+#    if int(A)==A: j+=1
+#print(j)
+
+
+#2.option
+#j=0
+#i=0
+#while True:
+#    i+=1
+#    A=float(input(f"sisesta A:"))
+#    if int(A)==A: j+=1
+#    if i==6: break
+#print(j)
+
+
+#3.option
+#j=0
+#i=0
+#while i<7:
+#    i+=1
+#    A=float(input(f"sisesta A:"))
+#    if int(A)==A: j+=1
+#print(j)
+        
+#2. Запросите у пользователя число А и найдите сумму всех натуральных чисел от 1 до А.
+#1 option
+print("Ulisanne 2. kõigi naturaalarvude summa vahemikus 1 kuni A")
+
+j=0
+for i in range(1,7,1):
+    A=float(input(f"sisesta A:"))
+    if A>0:
+        if int(A)==A: j+=A
+print(round(j),)
+
+#2 option
+#j=0
+#i=0
+#while True:
+#    i+=1
+#    A=float(input(f"sisesta A:"))
+#    if int(A)==A: j+=A
+#    if i==6: break
+#print(round(j),)
+
+#3 option
+
+#j=0
+#i=0
+#while i<6:
+#    i+=1
+#    A=float(input(f"sisesta A:"))
+#    if int(A)==A: j+=A
+#print(round(j),)
+
+#3. Вводят 8 чисел. Найти их произведение (только положительных и целых).
+#1 option
+#j=1
+#for i in range(1,8,1):
+#    A=float(input(f"sisesta A:"))
+#    if A>0:
+#        if int(A)==A: j*=A
+#print(round(j),)
+
+#2 option
+print("Ulisanne 3. ainult korrutamine positiivne ja täisarv")
+
+j=1
+i=0
+while True:
+    i+=1
+    A=float(input(f"sisesta A:"))
+    if A>0:
+        if int(A)==A: j*=A
+        if i==8: break
+print(round(j),)
+
+#3 option
+
+#j=1
+#i=0
+#while i<8:
+#    i+=1
+#    A=float(input(f"sisesta A:"))
+#    if A>0:
+#        if int(A)==A: j*=A
+#print(round(j),) 
+
+#4. Составьте программу, выводящую на экран квадраты чисел от 10 до 20.
+print("Ulisanne 4. numbrite ruudud vahemikus 10 kuni 20.")
+
+for i in range(10,20):
+    print(i**2)
+
+
+#5.Составьте программу, которая вычисляет сумму только отрицательных из N чисел. 
+#Значение N вводится с клавиатуры.
+
+#1.option
+
+#j=0
+#for i in range(1,6,1):
+#    N=float(input(f"Sisesta N:"))
+#    if N<0:
+#        if int(N)==N: j+=N
+#print(round(j),)
+
+#2. option
+
+#j=0
+#i=0
+#while True:
+#    i+=1
+#    N=float(input(f"Sisesta N:"))
+#    if N<0:
+#        if int(N)==N: j+=N
+#    if i==5: break 
+#print(round(j),)
+
+#.3 option
+print("Ulesanne 5. ainult negatiivsete summa")
+
+j=0
+i=0
+while i<6:
+    i+=1
+    N=float(input(f"Sisesta N:"))
+    if N<0:
+        if int(N)==N: j+=N  
+print(round(j),)
+
+#6.    С клавиатуры вводятся N чисел.
+#Составьте программу, которая определяет количество отрицательных,
+#количество положительных и количество нулей среди введенных чисел.  
+#Значение N вводится с клавиатуры.
+
+#j=0
+#for i in range (1,6,1): 
+#    N=float(input(f"sisesta N:"))
+#    if N>0 or N<0:
+#        if int(N)==N: j+=1 #не понимаю как сделать что бы он еще нули считал.
+#print(round(j),)
+
+#7. Вывести на экран числа, кратные К из промежутка [А,В].
+
+print("Ulesanne 7. Kuvage arvud, mis on K kordsed vahemikust [A, B].")
+
+for i in range(10,200,10):
+    if i%10==0: # если число кратно
+        print(i)
+
+#8. Составьте программу, которая печатает таблицу перевода расстояний из дюймов в сантиметры (1 дюйм =
+#2,5 см) для значений длин от 1 до 20 дюймов.
+
+print("Ulesanne 8 tollist sentimeetrini")
+
+for i in range (1,21):
+    print(i*2.5, end=", ")
+
+#9. В банк на трехпроцентный вклад положили S евро. Какой станет сумма вклада через N лет?
+
+print(" Ulesanne 9. 3% pangadeposiit ")
+
+n=float(input("aastate arv ="))
+p=float(input("protsenti ? ="))
+s=float(input("kui palju raha ="))
+
+for i in range(int(n)):
+    s+=s*(p/100)
+print(f"peale {int(n)} aastat su on nii palju raha {s}")
+
+#10. Ввести с клавиатуры 10 пар чисел.  Сравнить числа в каждой паре и напечатать 
+#большие из них.
+
+print("Ulesanne 10. 10 paari numbreid. Võrrelge iga paari numbreid")
+
+for i in range(1,10):
+    a,b=map(int,input().split())
+    if a==0 and b==0: break
+    else:
+        if a>b:
+            print(a)
+        elif a<b:
+            print(b)
+
+#Python map() — это встроенная функция, которая применяет функцию ко всем 
+#входным элементам итератора
+
+
+#28. Реализуйте "мини лотерею". Пусть компрьютер "задумает число", а пользователь его должен 
+#отгадать. В конце сообщив количество попыток
+
+print("Ulesanne 28. Viking Loto")
+
+from random import randint
+i=0
+N=randint(1,10)
+K=int(input("guess a num from 1 to 10:"))
+while K!=N:
+    K=int(input("Try again:"))
+    if K<N:
+        print("your num less, then AI has conceived")
+    elif K>N:
+        print(" your num more ")
+    else: 
+        print(" you have just guessed! my conngratulations!")
+    i+=1
+print("it has taken",i,"tries") 
+ 
+
+
+#17.Напишите программу, печатающую столбик таблицу умножения такого вида:
+#2*1=2
+#2*2=4
+#2*3=6
+#2*4=8
+#2*5=10
+#2*6=12
+#2*7=14
+#2*8=16
+#2*9=18
+
+print("Ulesanne 17. Korrutustabel")
+n=int(input("sisesta n:"))
+for i in range(1,10):
+    print(f"{n} * {i} ={n * i}")
+
+#18.Даны натуральные числа от 20 до 50. Напечатать те из них, которые делятся на 3, но не 
+#делятся на 5.
+
+print("Ulesanne 18. 20 50, Printige need, mis jaguvad 3-ga, kuid mitte jagatakse 5-ga ")
+
+for i in range(20,50):
+    if i%3==0 and i%5>0:
+        print(i)
+
+#15.Написать программу, выводящую в столбик десять строк, в каждой печатая цифры 
+#от 0 до 9, то есть в таком виде:
+
+print("Ulesanne 15. veerg kümme rida ")
+
+for i in range(10):
+    print("0 1 2 3 4 5 6 7 8 9")
+
+#19.Даны натуральные числа от 35 до 87. Найти и напечатать те из них, которые при делении 
+#на 7 дают остаток 1, 2 или 5.
+
+print("Ulesanne 19. 35 kuni 87. Otsige üles ja printige need, mis jagamisel 7 annab jäägi 1, 2 või 5. ")
+
+from ast import Continue
+
+
+a=[i for i in range(35,88)]
+j=[1,2,5]
+i=0
+if (a[i]%7) in j:
+    Continue
+                    
+else:
+    a[i]=0
+res=[i for i in a if i!=0]
+print(*res)
+
+#Переменная res внутри функции intersect – это то, что в языке Python называется 
+#локальной переменной,
+
+#23.В ЭВМ вводятся координаты N точек. Определить, сколько из них попадает в круг 
+#радиусом R с центром в точке (a,b).
+
+print(" Ulesanne 23. N punkti koordinaadid sisestatakse arvutisse. Määrake, kui palju neist ringi langeb raadius R tsentreeritud punktis (a,b). ")
+
+N=int(input("sisestage punktide arv "))
+R=int(input("sisestage ringi raadius "))
+
+a,b=map(int,input("ringi keskpunkti koordinadid ").split())
+
+k=0
+
+for i in range(N):
+
+    x,y=map(int,input("sisestage punkti koordinaadid ").split())
+
+    if (x-a)**2+(y-b)**2<=R**2: 
+        k+=1
+
+print(k,"punkti(-de) punkt on ringis ")
+
+                            #уровнение окружности с центром в точке
+                            #с координатами(a,b) и радиусом R для точки
+                            # с координатами(x,y) R^2=(x-a)^2+(y-b)^2
+
+#24.В ЭВМ вводятся по очереди данные о росте N учащихся класса. Определить средний 
+#рост учащихся класса.
+
+print("Ulesanne 24.opilaste pikkus")
+
+a=int(input("sisestage opilaste hulk:"))
+print("pikkus iga opilaste:")
+pikkus=[int(input())for i in range(a)] 
+avg_p=sum(pikkus)/a 
+print(avg_p," cm kesk")
+
+#30.В программе создаются 2 случайных числа M и N. И выводятся на экран в 
+#срочку 2 последовательности от N к M, и обратно  .
+
+#import random 
+
+#M=random.randint(25,40)
+#N=random.randint(M,50)
+#i=M 
+#while i!=N:
+#    i+=1 
+#    print("M-"+str(i))
+#i=N 
+#while i!=M:
+#    i-=1
+#    print("N-"+str(i))
