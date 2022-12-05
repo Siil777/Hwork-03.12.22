@@ -210,7 +210,7 @@ n=int(input("sisestage Niidukide kogus "))
 m=int(input("sisestage kui palju töötas 1 Niiduk "))
 tul=0
 for i in range(n):
-    tul+=1 
+    tul+=m
     m+=1/6
 print(f"{tul} tundi kogu meeskond tootas")
 
