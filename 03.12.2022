@@ -188,15 +188,18 @@ print(f"peale {int(n)} aastat su on nii palju raha {s}")
 #большие из них.
 
 print("Ulesanne 10. 10 paari numbreid. Võrrelge iga paari numbreid")
-
-for i in range(1,10):
-    a,b=map(int,input().split())
-    if a==0 and b==0: break
-    else:
-        if a>b:
-            print(a)
-        elif a<b:
-            print(b)
+u,y=0,0
+for i in range(5):
+	a,b=map(int,input("n:").split())
+	if a==0 and b==0: break
+	else:
+	     if a>b:
+		print(f"{a} more then {b}")
+		u+=1
+	     if a<b:
+		print(f"{a} less then {b}")
+		y+=1
+print("\nmore:{}\nless:{}".format(u,y))
 
 #Python map() — это встроенная функция, которая применяет функцию ко всем 
 #входным элементам итератора
