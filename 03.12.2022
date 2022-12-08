@@ -194,11 +194,11 @@ for i in range(5):
 	if a==0 and b==0: break
 	else:
 	     if a>b:
-		print(f"{a} more then {b}")
-		u+=1
+	     	print(f"{a} more then {b}")
+	     	u+=1
 	     if a<b:
-		print(f"{a} less then {b}")
-		y+=1
+	     	print(f"{a} less then {b}")
+	     	y+=1
 print("\nmore:{}\nless:{}".format(u,y))
 
 #Python map() — это встроенная функция, которая применяет функцию ко всем 
