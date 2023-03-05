@@ -1,32 +1,33 @@
 #1. Вводят 15 чисел. Определить, сколько среди них целых.
 #1.option
-#j=0
-#for i in range(1,6,1):
-#    A=float(input(f" sisesta A:"))
-#    int(A)==A
-#    if int(A)==A: j+=1
-#print(j)
+j=0
+for i in range(1,6,1):
+	#we input float numbers and give check with if input int thuse is counted numerous of integer and float
+    A=float(input(f" sisesta A:"))
+    int(A)==A
+    if int(A)==A: j+=1
+print(j)
 
 
 #2.option
-#j=0
-#i=0
-#while True:
-#    i+=1
-#    A=float(input(f"sisesta A:"))
-#    if int(A)==A: j+=1
-#    if i==6: break
-#print(j)
+j=0
+i=0
+while True:
+    i+=1
+    A=float(input(f"sisesta A:"))
+    if int(A)==A: j+=1
+    if i==6: break
+print(j)
 
 
 #3.option
-#j=0
-#i=0
-#while i<7:
-#    i+=1
-#    A=float(input(f"sisesta A:"))
-#    if int(A)==A: j+=1
-#print(j)
+j=0
+i=0
+while i<7:
+    i+=1
+    A=float(input(f"sisesta A:"))
+    if int(A)==A: j+=1
+print(j)
         
 #2. Запросите у пользователя число А и найдите сумму всех натуральных чисел от 1 до А.
 #1 option
@@ -40,33 +41,33 @@ for i in range(1,7,1):
 print(round(j),)
 
 #2 option
-#j=0
-#i=0
-#while True:
-#    i+=1
-#    A=float(input(f"sisesta A:"))
-#    if int(A)==A: j+=A
-#    if i==6: break
-#print(round(j),)
+j=0
+i=0
+while True:
+    i+=1
+    A=float(input(f"sisesta A:"))
+    if int(A)==A: j+=A
+    if i==6: break
+print(round(j),)
 
 #3 option
 
-#j=0
-#i=0
-#while i<6:
-#    i+=1
-#    A=float(input(f"sisesta A:"))
-#    if int(A)==A: j+=A
-#print(round(j),)
+j=0
+i=0
+while i<6:
+    i+=1
+    A=float(input(f"sisesta A:"))
+    if int(A)==A: j+=A
+print(round(j),)
 
 #3. Вводят 8 чисел. Найти их произведение (только положительных и целых).
 #1 option
-#j=1
-#for i in range(1,8,1):
-#    A=float(input(f"sisesta A:"))
-#    if A>0:
-#        if int(A)==A: j*=A
-#print(round(j),)
+j=1
+for i in range(1,8,1):
+    A=float(input(f"sisesta A:"))
+    if A>0:
+        if int(A)==A: j*=A
+print(round(j),)
 
 #2 option
 print("Ulisanne 3. ainult korrutamine positiivne ja täisarv")
@@ -81,46 +82,29 @@ while True:
         if i==8: break
 print(round(j),)
 
-#3 option
-
-#j=1
-#i=0
-#while i<8:
-#    i+=1
-#    A=float(input(f"sisesta A:"))
-#    if A>0:
-#        if int(A)==A: j*=A
-#print(round(j),) 
-
-#4. Составьте программу, выводящую на экран квадраты чисел от 10 до 20.
-print("Ulisanne 4. numbrite ruudud vahemikus 10 kuni 20.")
-
-for i in range(1,21):
-	print(f"{i }*{2.5}={i * 2.5}")
-
 #5.Составьте программу, которая вычисляет сумму только отрицательных из N чисел. 
 #Значение N вводится с клавиатуры.
 
 #1.option
 
-#j=0
-#for i in range(1,6,1):
-#    N=float(input(f"Sisesta N:"))
-#    if N<0:
-#        if int(N)==N: j+=N
-#print(round(j),)
+j=0
+for i in range(1,6,1):
+    N=float(input(f"Sisesta N:"))
+    if N<0:
+        if int(N)==N: j+=N
+print(round(j),)
 
 #2. option
 
-#j=0
-#i=0
-#while True:
-#    i+=1
-#    N=float(input(f"Sisesta N:"))
-#    if N<0:
-#        if int(N)==N: j+=N
-#    if i==5: break 
-#print(round(j),)
+j=0
+i=0
+while True:
+    i+=1
+    N=float(input(f"Sisesta N:"))
+    if N<0:
+        if int(N)==N: j+=N
+    if i==5: break 
+print(round(j),)
 
 #.3 option
 print("Ulesanne 5. ainult negatiivsete summa")
@@ -139,7 +123,7 @@ print(round(j),)
 #количество положительных и количество нулей среди введенных чисел.  
 #Значение N вводится с клавиатуры.
 
-z, p, n, counter=0,0,0,0
+z, p, n, counter=0,0,0,0 # assigns the value zero to each of the four variables z, p, n, and counter.
 
 print("sisestage 5 num")
 while counter<5:
@@ -147,7 +131,7 @@ while counter<5:
     a=int(input())
     if a>0:
         p+=1
-    elif a<0:                    # Он считает нули отдельно, если вводишь 0 с начало строки. как сделать что бы он вообше все нули считал. 
+    elif a<0:                  
         n+=1
     else:
         z+=1
