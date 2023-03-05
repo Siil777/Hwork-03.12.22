@@ -2,7 +2,7 @@
 #1.option
 j=0
 for i in range(1,6,1):
-	#we input float numbers and give check with if input int thuse is counted numerous of integer and float
+	#we gave float input's check with if input int thuse is counted numerous of integer
     A=float(input(f" sisesta A:"))
     int(A)==A
     if int(A)==A: j+=1
